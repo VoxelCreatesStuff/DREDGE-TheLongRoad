@@ -12,7 +12,7 @@ A DREDGE mod extending playtime by making shops more expensive, and extending va
 - Pot Buy Prices 2x ↓
 - Material Buy Prices 2x ↓
 - Haste Heat Decay 0.6667x ↓
-- -Book Read Time 2x ↓
+- Book Read Time 2x ↓
 
 - Ice Thaw Time 1.5x ↑
 
