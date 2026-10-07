@@ -2,6 +2,7 @@
 
 A DREDGE mod extending playtime by making shops more expensive, and extending various timers.
 
+<img width="616" height="353" alt="Mod Thumb" src="https://github.com/user-attachments/assets/5ac117a0-8bb9-46d5-a817-d5a4c8630397" />
 
 ## Done:
 - Rod Buy Prices 2x ↓
