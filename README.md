@@ -1,9 +1,9 @@
-#TheLongRoad
+# TheLongRoad
 
 A DREDGE mod extending playtime by making shops more expensive, and extending various timers.
 
 
-##Included:
+## Done:
 -Rod Buy Prices 2x ↓
 -Engine Buy Prices 2x ↓
 -Net Buy Prices 2x ↓
@@ -15,7 +15,7 @@ A DREDGE mod extending playtime by making shops more expensive, and extending va
 -Ice Thaw Time 1.5x ↑
 
 
-##TODO:
+## TODO:
 -Add config for easy tweaking
 
 -Book Read Speed 0.5x ↓
