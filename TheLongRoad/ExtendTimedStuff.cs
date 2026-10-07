@@ -66,3 +66,24 @@ public static class ExtendHeatDecay
         );
     }
 }
+
+
+[HarmonyPatch(typeof(ItemManager), "OnItemDataAddressablesLoaded")]
+public static class ExtendReadTime
+{
+    private static void Postfix(ItemManager __instance)
+    {
+        foreach (ItemData item in __instance.allItems)
+        {
+            if (item is ResearchableItemData research)
+            {
+                float oldTime = research.daysToResearch;
+                research.daysToResearch *= 2f;
+
+                WinchCore.Log.Debug(
+                    $"RESEARCG: type:{item.GetType().Name}/id:{research.id}, time={oldTime} -> {research.daysToResearch}"
+                );
+            }
+        }
+    }
+}
