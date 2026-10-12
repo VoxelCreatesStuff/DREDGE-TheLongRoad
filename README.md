@@ -5,6 +5,8 @@ A DREDGE mod extending playtime by making shops more expensive, and extending va
 <img width="616" height="353" alt="Mod Thumb" src="https://github.com/user-attachments/assets/5ac117a0-8bb9-46d5-a817-d5a4c8630397" />
 
 ## Done:
+- Add ingame config for easy tweaking
+
 - Rod Buy Prices 2x ↓
 - Engine Buy Prices 2x ↓
 - Net Buy Prices 2x ↓
@@ -18,7 +20,7 @@ A DREDGE mod extending playtime by making shops more expensive, and extending va
 
 
 ## TODO:
-- Add config for easy tweaking
+-Switch config to dropdown selection
 
 - Research Points per research +1 ↓
 - Additional Research points per engine research +1 ↓
