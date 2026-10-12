@@ -2,7 +2,7 @@
 	"Author": "VoxelsMods",
 	"Name": "The Long Road",
 	"ModGUID": "VoxelsMods.TheLongRoad",
-	"Version": "0.0.1",
+	"Version": "1.0.0",
   "ModAssembly": "TheLongRoad.dll",
 	"MinWinchVersion": "0.6.1",
 	"Entrypoint": "TheLongRoad.Loader/Initialize"
