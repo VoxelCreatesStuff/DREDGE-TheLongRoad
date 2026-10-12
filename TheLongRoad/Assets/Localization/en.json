@@ -1,0 +1,18 @@
+{
+  "thelongroad.config.rod_buy_price.title": "Rod Buy Price",
+  "thelongroad.config.rod_buy_price.tooltip": "How expensive rods are.\nDefault: 2.0x\nMin: 0.01x, Max: 20.0x\nWhen changing values ingame, press Save&Quit, and then Continue!",
+  "thelongroad.config.engine_buy_price.title": "Engine Buy Price",
+  "thelongroad.config.engine_buy_price.tooltip": "How expensive engines are.\nDefault: 2.0x\nMin: 0.01x, Max: 20.0x\nWhen changing values ingame, press Save&Quit, and then Continue!",
+  "thelongroad.config.deployable_buy_price.title": "Net & Pot Buy Price",
+  "thelongroad.config.deployable_buy_price.tooltip": "How expensive nets & pots are.\nDefault: 2.0x\nMin: 0.01x, Max: 20.0x\nWhen changing values ingame, press Save&Quit, and then Continue!",
+  "thelongroad.config.light_buy_price.title": "Light Buy Price",
+  "thelongroad.config.light_buy_price.tooltip": "How expensive lights are.\nDefault: 2.0x\nMin: 0.01x, Max: 20.0x\nWhen changing values ingame, press Save&Quit, and then Continue!",
+  "thelongroad.config.harvestable_buy_price.title": "Harvestable Buy Price",
+  "thelongroad.config.harvestable_buy_price.tooltip": "How expensive reacources like wood & gears are.\nDefault: 2.0x\nMin: 0.01x, Max: 20.0x\nWhen changing values ingame, press Save&Quit, and then Continue!",
+  "thelongroad.config.ice_thaw_time.title": "Ice Thaw Time",
+  "thelongroad.config.ice_thaw_time.tooltip": "How long ice lasts.\nDefault: 1.5x\nMin: 0.5x, Max: 40.0x\nWhen changing values ingame, press Save&Quit, and then Continue!",
+  "thelongroad.config.book_read_time.title": "Book Read Time",
+  "thelongroad.config.book_read_time.tooltip": "How long books take to read.\nDefault: 2.0x\nMin: 0.1x, Max: 40.0x\nWhen changing values ingame, press Save&Quit, and then Continue!",
+  "thelongroad.config.haste_heat_decay.title": "Haste Heat Decay",
+  "thelongroad.config.haste_heat_decay.tooltip": "How fast the haste heat buildup decreases.\nDefault: 0.6667x\nMin: 0.001x, Max: 5.0x\nWhen changing values ingame, press Save&Quit, and then Continue!"
+}

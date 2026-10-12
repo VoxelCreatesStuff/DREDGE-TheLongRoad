@@ -1,0 +1,66 @@
+{
+  "tlrRodBuyPrice": {
+    "type": "slider",
+    "title": "thelongroad.config.rod_buy_price.title",
+    "tooltip": "thelongroad.config.rod_buy_price.tooltip",
+    "value": 2.0,
+    "min": 0.01,
+    "max": 20.0
+  },
+  "tlrEngineBuyPrice": {
+    "type": "slider",
+    "title": "thelongroad.config.engine_buy_price.title",
+    "tooltip": "thelongroad.config.engine_buy_price.tooltip",
+    "value": 2.0,
+    "min": 0.01,
+    "max": 20.0
+  },
+  "tlrDeployableBuyPrice": {
+    "type": "slider",
+    "title": "thelongroad.config.deployable_buy_price.title",
+    "tooltip": "thelongroad.config.deployable_buy_price.tooltip",
+    "value": 2.0,
+    "min": 0.01,
+    "max": 20.0
+  },
+  "tlrLightBuyPrice": {
+    "type": "slider",
+    "title": "thelongroad.config.light_buy_price.title",
+    "tooltip": "thelongroad.config.light_buy_price.tooltip",
+    "value": 2.0,
+    "min": 0.01,
+    "max": 20.0
+  },
+  "tlrHarvestableBuyPrice": {
+    "type": "slider",
+    "title": "thelongroad.config.harvestable_buy_price.title",
+    "tooltip": "thelongroad.config.harvestable_buy_price.tooltip",
+    "value": 2.0,
+    "min": 0.01,
+    "max": 20.0
+  },
+  "tlrIceThawTime": {
+    "type": "slider",
+    "title": "thelongroad.config.ice_thaw_time.title",
+    "tooltip": "thelongroad.config.ice_thaw_time.tooltip",
+    "value": 1.5,
+    "min": 0.5,
+    "max": 40.0
+  },
+  "tlrBookReadTime": {
+    "type": "slider",
+    "title": "thelongroad.config.book_read_time.title",
+    "tooltip": "thelongroad.config.book_read_time.tooltip",
+    "value": 2.0,
+    "min": 0.1,
+    "max": 40.0
+  },
+  "tlrHasteHeatDecay": {
+    "type": "slider",
+    "title": "thelongroad.config.haste_heat_decay.title",
+    "tooltip": "thelongroad.config.haste_heat_decay.tooltip",
+    "value": 0.6667,
+    "min": 0.001,
+    "max": 5.0
+  }
+}

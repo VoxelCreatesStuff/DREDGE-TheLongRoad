@@ -1,6 +1,7 @@
 using System.Reflection;
 using HarmonyLib;
 using Winch.Core;
+using System;
 
 namespace TheLongRoad;
 
@@ -17,10 +18,10 @@ public static class ExtendIceThaw
                 if (item.id == "ice-block-1" || item.id == "ice-block-2")
                 {
                     float oldTime = ice.maxDurabilityDays;
-                    ice.maxDurabilityDays *= 1.5f;
+                    ice.maxDurabilityDays = ice.maxDurabilityDays * (float)ConfigValues.IceThawTime;
                     
                     WinchCore.Log.Debug(
-                        $"ICE BLOCK: type:{item.GetType().Name}/id:{ice.id}, time={oldTime} -> {ice.maxDurabilityDays}"
+                        $"ICE BLOCK: type:{item.GetType().Name}/id:{ice.id}, time={oldTime} * {ConfigValues.IceThawTime} = {ice.maxDurabilityDays}"
                     );
 
 
@@ -57,12 +58,12 @@ public static class ExtendHeatDecay
 {
     private static void Postfix(BoostAbility __instance)
     {
-        float oldHeatLoss = __instance.hasteHeatLoss;
+        float oldHeatDecay = __instance.hasteHeatLoss;
 
-        __instance.hasteHeatLoss *= 0.6667f;
+        __instance.hasteHeatLoss = __instance.hasteHeatLoss * (float)ConfigValues.HasteHeatDecay;
 
         WinchCore.Log.Debug(
-            $"HASTE HEAT LOSS: {oldHeatLoss} -> {__instance.hasteHeatLoss}"
+            $"HASTE HEAT LOSS: {oldHeatDecay} * {ConfigValues.HasteHeatDecay} = {__instance.hasteHeatLoss}"
         );
     }
 }
@@ -78,10 +79,10 @@ public static class ExtendReadTime
             if (item is ResearchableItemData research)
             {
                 float oldTime = research.daysToResearch;
-                research.daysToResearch *= 2f;
+                research.daysToResearch = research.daysToResearch * (float)ConfigValues.BookReadTime;
 
                 WinchCore.Log.Debug(
-                    $"RESEARCG: type:{item.GetType().Name}/id:{research.id}, time={oldTime} -> {research.daysToResearch}"
+                    $"RESEARCG: type:{item.GetType().Name}/id:{research.id}, time={oldTime} * {ConfigValues.BookReadTime} = {research.daysToResearch}"
                 );
             }
         }

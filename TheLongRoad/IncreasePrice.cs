@@ -1,5 +1,6 @@
 using HarmonyLib;
 using Winch.Core;
+using System;
 
 namespace TheLongRoad;
 
@@ -9,7 +10,7 @@ public static class ItemManagerPatch
     private static void Postfix(ItemManager __instance)
     {
         //Grabbing item info for debug purposes
-        WinchCore.Log.Info("=== ITEM SCAN STARTED ===");
+        /*WinchCore.Log.Info("=== ITEM SCAN STARTED ===");
         int count = 0;
         foreach (ItemData item in __instance.allItems)
         {
@@ -19,7 +20,7 @@ public static class ItemManagerPatch
 
             count++;
         }
-        WinchCore.Log.Info($"=== ITEM SCAN COMPLETE: {count} ITEMS ===");
+        WinchCore.Log.Info($"=== ITEM SCAN COMPLETE: {count} ITEMS ===");*/
 
         //Changing values
         foreach (ItemData item in __instance.allItems)
@@ -27,40 +28,40 @@ public static class ItemManagerPatch
             if (item is RodItemData rod)
             {
                 decimal oldPrice = rod.value;
-                rod.value *= 2;
+                rod.value = (decimal)Math.Truncate((float)rod.value * ConfigValues.RodBuyPrice);
 
                 WinchCore.Log.Debug(
-                    $"UPDATED ROD type:{item.GetType().Name}/id:{rod.id}, price={oldPrice} -> {rod.value}"
+                    $"UPDATED ROD type:{item.GetType().Name}/id:{rod.id}, price={oldPrice} * {ConfigValues.RodBuyPrice} = {rod.value}"
                 );
             }
 
             if (item is EngineItemData engine)
             {
                 decimal oldPrice = engine.value;
-                engine.value *= 2;
+                engine.value = (decimal)Math.Truncate((float)engine.value * ConfigValues.EngineBuyPrice);
 
                 WinchCore.Log.Debug(
-                    $"UPDATED ENGINE: type:{item.GetType().Name}/id:{engine.id}, price={oldPrice} -> {engine.value}"
+                    $"UPDATED ENGINE: type:{item.GetType().Name}/id:{engine.id}, price={oldPrice} * {ConfigValues.EngineBuyPrice} = {engine.value}"
                 );
             }
 
             if (item is DeployableItemData net)
             {
                 decimal oldPrice = net.value;
-                net.value *= 2;
+                net.value = (decimal)Math.Truncate((float)net.value * ConfigValues.DeployableBuyPrice);
 
                 WinchCore.Log.Debug(
-                    $"UPDATED DEPLOYABLE (NET/POT): type:{item.GetType().Name}/id:{net.id}, price={oldPrice} -> {net.value}"
+                    $"UPDATED DEPLOYABLE (NET/POT): type:{item.GetType().Name}/id:{net.id}, price={oldPrice} * {ConfigValues.DeployableBuyPrice} = {net.value}"
                 );
             }
 
             if (item is LightItemData light)
             {
                 decimal oldPrice = light.value;
-                light.value *= 2;
+                light.value = (decimal)Math.Truncate((float)light.value * ConfigValues.LightBuyPrice);
 
                 WinchCore.Log.Debug(
-                    $"UPDATED LIGHT: type:{item.GetType().Name}/id:{light.id}, price={oldPrice} -> {light.value}"
+                    $"UPDATED LIGHT: type:{item.GetType().Name}/id:{light.id}, price={oldPrice} * {ConfigValues.LightBuyPrice} = {light.value}"
                 );
             }
 
@@ -69,10 +70,10 @@ public static class ItemManagerPatch
                 if (item.id == "cloth" || item.id == "lumber" || item.id == "metal" || item.id == "scrap" || item.id == "research-item" || item.id == "crate")
                 {
                     decimal oldPrice = recource.value;
-                    recource.value *= 2;
+                    recource.value = (decimal)Math.Truncate((float)recource.value * ConfigValues.HarvestableBuyPrice);
 
                     WinchCore.Log.Debug(
-                        $"UPDATED HARVESTABLE: type:{item.GetType().Name}/id:{recource.id}, price={oldPrice} -> {recource.value}"
+                        $"UPDATED HARVESTABLE: type:{item.GetType().Name}/id:{recource.id}, price={oldPrice} * {ConfigValues.HarvestableBuyPrice} = {recource.value}"
                     );
                 }
             }
